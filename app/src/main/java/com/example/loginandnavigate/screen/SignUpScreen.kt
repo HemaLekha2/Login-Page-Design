@@ -47,7 +47,7 @@ fun SignUpScreen(onNavigateToLogin: () -> Unit) {
             PasswordTextFieldComponent(labelValue = stringResource(R.string.password), painterResource = Icons.Default.Lock)
              CheckboxComponent()
              Spacer(modifier = Modifier.height(40.dp))
-            GradientButton(value = " Login ", onClick = {  })
+            GradientButton(value = " Register ", onClick = {  })
 
             Spacer(modifier = Modifier.height(20.dp))
             DividerTextComponent()

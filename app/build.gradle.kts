@@ -62,4 +62,6 @@ dependencies {
     implementation(libs.androidx.material.icons.extended)
     //for navigation
     implementation(libs.androidx.navigation.compose)
+    // 📱 Include the AndroidX Core library with SplashScreen API support
+    implementation(libs.androidx.core.splashscreen)
 }

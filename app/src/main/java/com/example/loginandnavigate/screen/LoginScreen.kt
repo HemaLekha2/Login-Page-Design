@@ -26,7 +26,7 @@ import com.example.loginandnavigate.components.PasswordTextFieldComponent
 import com.example.loginandnavigate.components.UnderLinedTextComponent
 
 @Composable
-fun LoginScreen(onNavigateToSignup: () -> Unit) {
+fun LoginScreen(onNavigateToSignup: () -> Unit, onNavigateToHome: () -> Unit) {
     Surface(
         modifier = Modifier
             .fillMaxSize()
@@ -47,7 +47,9 @@ fun LoginScreen(onNavigateToSignup: () -> Unit) {
             UnderLinedTextComponent(value = stringResource(R.string.forgot_password))
 
             Spacer(modifier = Modifier.height(40.dp))
-            GradientButton(value = stringResource(id = R.string.login), onClick = {})
+            GradientButton(value = stringResource(id = R.string.login), onClick = {
+                onNavigateToHome()
+            })
 
 
             Spacer(modifier = Modifier.height(20.dp))
